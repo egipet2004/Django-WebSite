@@ -1,0 +1,80 @@
+body{
+    background: #FFC0CB;
+}
+
+/* Параметры навигационного модуля*/
+aside {
+  width: 250px; /* ширина навигации */
+  background-color: #FFB6C1; /* фон основной */
+  color: black; /* Черный текст */
+  padding: 20px; /* Внутренние отступы */
+  position: fixed; /* Фиксируем положение */
+  left: 0; /* Прижимаем к левому краю */
+  top: 0;
+  height: 100vh; /* Высота на весь экран (viewport height) */
+}
+
+/* Параметры картинки навигационного модуля*/
+aside img {
+  width: 100%; /* Картинка будет подстраиваться под ширину aside */
+  border-radius: 50%; /* Делаем лого круглым */
+  margin-bottom: 20px; /* Отступ после картинки */
+}
+
+aside h3 {
+    text-align: center;
+}
+
+.site-header {
+ margin-bottom: 40px;
+}
+
+
+main {
+    margin-left: 270px; /* ширина aside + padding */
+    padding: 20px;
+}
+
+
+
+
+
+
+
+.photo-list {
+    padding: 0;
+    margin-top: 40px;
+}
+
+/* Общие стили для всех photo-item */
+.photo-item1,
+.photo-item2,
+.photo-item3 {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+/* Общие стили для всех изображений */
+.photo-item1 img,
+.photo-item2 img,
+.photo-item3 img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    object-position: 50% 90%;
+    flex-shrink: 0;
+    margin-right: 15px;
+}
+
+/* Общие стили для всех text-content */
+.text-content1,
+.text-content2,
+.text-content3 {
+    flex: 1;
+    min-width: 0;
+}
+
