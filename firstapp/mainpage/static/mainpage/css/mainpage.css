@@ -21,8 +21,31 @@ aside img {
   margin-bottom: 20px; /* Отступ после картинки */
 }
 
+
 aside h3 {
-    text-align: center;
+    padding-left: 32px;
+}
+
+aside ul {
+    list-style: none;
+    padding-left: 32px;
+}
+
+
+aside ul a {
+    color: black; /* Черный цвет текста */
+    text-decoration: none; /* Убираем подчеркивание ссылок */
+}
+
+aside ul li {
+    display: block;
+    margin-top: 20px;
+    transition: all .6s ease;
+
+}
+/* это чтобы сделать эффект увелечения иконок*/
+aside ul li:hover, aside ul a:hover{
+    transform: scale(1.1);
 }
 
 .site-header {
@@ -49,7 +72,9 @@ main {
 /* Общие стили для всех photo-item */
 .photo-item1,
 .photo-item2,
-.photo-item3 {
+.photo-item3,
+.photo-item4,
+.photo-item5{
     display: flex;
     align-items: flex-start;
     margin-bottom: 20px;
@@ -61,7 +86,9 @@ main {
 /* Общие стили для всех изображений */
 .photo-item1 img,
 .photo-item2 img,
-.photo-item3 img {
+.photo-item3 img,
+.photo-item4 img,
+.photo-item5 img{
     width: 180px;
     height: 180px;
     object-fit: cover;
@@ -73,7 +100,9 @@ main {
 /* Общие стили для всех text-content */
 .text-content1,
 .text-content2,
-.text-content3 {
+.text-content3,
+.photo-content4,
+.photo-content5{
     flex: 1;
     min-width: 0;
 }
